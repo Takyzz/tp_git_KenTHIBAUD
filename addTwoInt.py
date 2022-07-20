@@ -1,9 +1,16 @@
-#!/usr/bin/env python3
-
+#!/usr/bin/python3
 import sys
 
-print(sys.argv)
+def add(a, b):
+    s = a + b
+    return s
 
-a = int( sys.argv[1] )
-b = int( sys.argv[2] )
-print(a+b)
+l=len(sys.argv)
+if l == 3 :
+    a = int( sys.argv[1] )
+    b = int( sys.argv[2] )
+
+    print("Somme = ",add(a,b))
+
+else:
+    print("Erreur !! Il faut insérer 2 valeurs.")
